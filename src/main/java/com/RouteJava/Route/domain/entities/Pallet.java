@@ -29,4 +29,15 @@ public class Pallet {
     @Enumerated(EnumType.STRING)
     private PalletState state;
 
+    //Relaciones
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "loads_id", referencedColumnName = "id")
+    private Load loads;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "carrier_id", referencedColumnName = "id")
+    private Carrier carrier;
+
+
 }

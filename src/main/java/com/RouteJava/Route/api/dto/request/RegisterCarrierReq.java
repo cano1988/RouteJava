@@ -1,19 +1,20 @@
 package com.RouteJava.Route.api.dto.request;
 
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-
+@EqualsAndHashCode(callSuper= false)
 @Data
-@Builder
+@SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CarrierRequest {
-
+public class RegisterCarrierReq {
     @NotBlank(message = "El nombre es requerido")
     @Size(
             min = 1,
@@ -23,4 +24,5 @@ public class CarrierRequest {
     private String name;
     @NotBlank(message = "La descripción es requerida")
     private String description;
+
 }

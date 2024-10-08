@@ -1,4 +1,4 @@
-package com.RouteJava.Route.api.dto;
+package com.RouteJava.Route.api.dto.response;
 
 
 import com.RouteJava.Route.util.enums.PalletMaterial;

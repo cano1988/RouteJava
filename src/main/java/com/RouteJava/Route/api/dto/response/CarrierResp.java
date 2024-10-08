@@ -1,4 +1,4 @@
-package com.RouteJava.Route.api.dto;
+package com.RouteJava.Route.api.dto.response;
 
 
 import com.RouteJava.Route.domain.entities.Pallet;
@@ -18,7 +18,7 @@ public class CarrierResp {
     private Long id;
     private  String name;
     private  String description;
-    private List<Pallet> pallets;
+
 
 
 }
